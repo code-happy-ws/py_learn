@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 实例 - 下拉菜单（Dropdowns）</title>
+{#	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>#}
+{#	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none
+        ;
+        }
+
+        .container{
+            width: 375px;
+            height: 600px;
+            background: pink;
+        }
+
+        .search-group{
+            padding: 14px 8px;
+            background: #4cae4c;
+        }
+
+        .search-input{
+            background: #fff;
+            display: block;
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+
+        .item_list_top{
+            overflow: hidden;{# 关闭浮动 #}
+
+        }
+
+        .module_title{
+            float: left;
+        }
+
+        .more_btn{
+            float: right;
+        }
+
+        .list_group{
+            overflow: hidden;
+        }
+
+        .item_group{
+            float: left;
+            margin-left: 10px;
+        }
+        .snow{
+            display: block;{# 块级元素 #}
+            width: 100px;
+            height: 150px;
+        }
+        .item_title{
+            font-size: 12px;
+            text-align: center;
+        }
+        .item_rating{
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+ {% macro item(file_name,item_title,item_rating) %}
+             <div class="item_group">
+             {% set file=file_name %}
+                <img src="{{ url_for('static',filename='img/'+file)}}" alt='' class="snow">
+                <p class="item_title">{{ item_title }}</p>
+                <p class="item_rating">{{item_rating }}</p>
+            </div>
+{% endmacro %}
+<div class="container">
+    <div class="search-group">
+        <input type="text" class="search-input" placeholder="search...">
+    </div>
+
+    <div class="item_list_group">
+        <div class="item_list_top">
+            <span class="module_title">电影</span>
+            <a href="#" class="more_btn">更多</a>
+        </div>
+        <div class="list_group">
+            {{ item('httpimage123msncomwallpaperi201510IsabelaIsland_ZHCN10657686554s5jpg.jpg',"冰雪奇缘",'7.5') }}
+            {{ item('httpimage123msncomwallpaperi201510MossDroplets_ZHCN9959053333s5jpg.jpg',"胡文爽",'10') }}
+            {{ item('httpimage123msncomwallpaperi201510PretzfeldRegenbogen_ZHCN8298443827s5jpg.jpg',"张振威",'10') }}</div></div>
+
+            <div class="item_list_group">
+
+        <div class="item_list_top">
+            <span class="module_title">电影</span>
+            <a href="#" class="more_btn">更多</a>
+        </div>
+              {{ item('httpimage123msncomwallpaperi201510IsabelaIsland_ZHCN10657686554s5jpg.jpg',"冰雪奇缘",'7.5') }}
+            {{ item('httpimage123msncomwallpaperi201510MossDroplets_ZHCN9959053333s5jpg.jpg',"胡文爽",'10') }}
+            {{ item('httpimage123msncomwallpaperi201510PretzfeldRegenbogen_ZHCN8298443827s5jpg.jpg',"张振威",'10') }}
+        </div>
+
+
+</body>
+</html>
