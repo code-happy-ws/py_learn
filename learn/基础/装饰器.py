@@ -6,12 +6,12 @@ print('基础装饰器---------------------------------------------------------'
 
 
 def clear(func, name='zzw'):
+    @wraps
     def wrapper(*args, **kwargs):
         print(name)
         print('start')
         func(*args, **kwargs)
         print('end')
-
     return wrapper
 
 
@@ -91,31 +91,3 @@ show_type('a')
 show_type(1)
 show_type((1,))
 show_type([1, 2])
-
-print('@property装饰器---------------------------------------------------------')
-""" 使用@property 装饰器将一个直接访问的属性转变为函数触发式属性,可实现数值验证或额外的实时运算
-    缺点：无法复用移植到其他类使用，可通过描述符改写(推荐),或者mix-in类（混合类）"""
-
-
-class Person:
-    def __init__(self, name):
-        print('init')
-        self.name = name  # 调用setter
-        # print('self.name',self.name)
-
-    @property  # getter方法
-    def name(self):
-        print('getter')
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        print('setter')
-        if name < 10:
-            self._name = name * 10
-        else:
-            self._name = name / 10
-
-
-P = Person(1000)  # 调用setter
-print(P.name)  # 调用getter

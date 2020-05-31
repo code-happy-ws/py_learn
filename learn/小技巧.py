@@ -14,10 +14,10 @@ print(data)
 data_after=[x for x in data if x>2]
 print(list(data_after))"""
 
-from timeit import timeit
-# 程序执行计时
-print(timeit(a,number=1))
-print(timeit(b,number=1))
+# from timeit import timeit
+# # 程序执行计时
+# print(timeit(a,number=1))
+# print(timeit(b,number=1))
 
 a={'b':56,'c':68,'d':75}
 m={k:v for k,v in a.items() if v>60}
@@ -35,6 +35,7 @@ print(s[AGE])
 
 Student=namedtuple('stu',['name','age','sex'])
 s1=Student('Tom','16','male')
+print(s1)
 print(s1.name)
 print('-'*30)
 

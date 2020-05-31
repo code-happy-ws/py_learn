@@ -5,7 +5,7 @@ class LNode:
 
 class Link:
     def __init__(self,data):
-        self.data=data
+        self.data=data[:]
         self.head=None
         self.init(self.data)
 
@@ -25,7 +25,8 @@ class Link:
         print(result)
 
     def revert(self):
-        """链表反转"""
+        """链表反转
+        思路：两变量分别暂存前驱节点和本节点为下轮指针重定向做准备"""
         p_head=None
         p=self.head
         while p.next:
@@ -64,8 +65,6 @@ class HandleLink:
             return linkHead2
         if not linkHead2:
             return linkHead1
-
-
         if linkHead1.data < linkHead2.data:
             linkHead1.next=self.merge_link(linkHead1.next,linkHead2)
             return linkHead1
@@ -77,19 +76,20 @@ class HandleLink:
         """非递归:建一个虚拟节点，并移动依次连上两链表中较小的那个节点
         """
         p = LNode(-1)
-        head=LNode(-1)
+        now=LNode(-1)
         while linkHead1 and linkHead2:
             if linkHead1.data < linkHead2.data:
-                head.next=linkHead1
-                head=linkHead1
+                now.next=linkHead1
+                now=linkHead1
                 linkHead1=linkHead1.next
             else:
-                head.next=linkHead2
-                head=linkHead2
+                now.next=linkHead2
+
+                now=linkHead2
                 linkHead2=linkHead2.next
 
         # 连接上后续节点
-        head.next=linkHead2 or linkHead1
+        now.next=linkHead2 or linkHead1
         return p.next
 
 
@@ -98,11 +98,12 @@ if __name__ == '__main__':
     handle=HandleLink()
     data=[1,3,5,7,8]
     l1=Link(data)
+    print(data)
 
-    data2=[2,4,5,6]
-    l2 = Link(data2)
-    print('合并两个有序链表_________')
-    handle.merge_link(l1.head,l2.head)
+    # data2=[2,4,5,6]
+    # l2 = Link(data2)
+    # print('合并两个有序链表_________')
+    # handle.merge_link(l1.head,l2.head)
     l1.show_link()
     # handle.merge_link2(l1.head,l2.head)
     # l1.show_link()

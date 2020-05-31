@@ -3,10 +3,6 @@ from flask import render_template,Response
 
 
 
-class BootstrapIndex(Resource):
+class VueIndex(Resource):
     def get(self):
-        return Response(render_template('bootstrap_table.html'))
-
-
-
-
+        return Response(render_template('vue_index.html'))

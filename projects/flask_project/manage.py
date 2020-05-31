@@ -1,14 +1,15 @@
 from flask import Flask, request,render_template,make_response,Response
 from flask_restful import Api
 from datetime import datetime
+
+from apps.Vue.views import VueIndex
 from apps.douban.views import douban
 from apps.bootstrap.views import BootstrapIndex
-
+from apps.urls import init_app
+__import__()
 app = Flask(__name__)
-api = Api(app)
+init_app(app)
 
-api.add_resource(BootstrapIndex,'/')
-api.add_resource(douban, '/douban/')
 
 @app.route('/login/',methods=['GET','POST'])
 def login():
@@ -28,4 +29,4 @@ def login():
         return 'success'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

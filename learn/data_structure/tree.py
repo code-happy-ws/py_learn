@@ -49,20 +49,35 @@ class HandleTree():
         return self.front_list
 
     def front_stack(self,root):
-        """非递归实现前序遍历:栈和队列
-        思路：先入右节点，再入左节点，取出时从右边取出；
-            通过栈暂存遍历过的节点，pop取出处理的节点，栈中保存未处理的节点；
-        """
         ret=[]
-        stack=[root]
-        while stack:
-            node=stack.pop()
-            ret.append(node.elem)
-            if node.r_child:
-                stack.append(node.r_child)
-            if node.l_child:
-                stack.append(node.l_child)
+        stack=[]
+        while stack or root:
+            if root:
+                stack.append(root)
+                ret.append(root.elem)
+                root=root.l_child
+            else:
+                node=stack.pop()
+                root=node.r_child
         return ret
+
+    #
+    # def front_stack2(self,root):
+    #     """非递归实现前序遍历:栈和队列
+    #     思路：先入右节点，再入左节点，取出时从右边取出；
+    #         通过栈暂存遍历过的节点，pop取出处理的节点，栈中保存未处理的节点；
+    #     """
+    #     ret=[]
+    #     stack=[root]
+    #     while stack:
+    #         node=stack.pop()
+    #         ret.append(node.elem)
+    #         if node.r_child:
+    #             stack.append(node.r_child)
+    #         if node.l_child:
+    #             stack.append(node.l_child)
+    #     return ret
+
 
     def mid_digui(self,root):
         """递归实现中序遍历
@@ -118,6 +133,7 @@ class HandleTree():
             else:
                 node=stack.pop()
                 root=node.l_child
+
         return ret
 
 
@@ -150,28 +166,25 @@ class HandleTree():
         return ret
 
     def find_path(self,tree, num):
-        """输入一棵二叉树和一个值，求从根结点到叶结点的和等于该值的路径"""
+        """输入一棵二叉树和一个值，求从根结点到叶结点的和等于该值的路径
+        思路：深度优先搜索变形
+            关键点1.
+
+            """
         ret = []
         if not tree:
             return ret
-        path = [tree]
-        sums = [tree.val]
-        def dfs(tree):
-            if tree.left:
-                path.append(tree.left)
-                sums.append(sums[-1] + tree.left.val)
-                dfs(tree.left)
-            if tree.right:
-                path.append(tree.right)
-                sums.append(sums[-1] + tree.right.val)
-                dfs(tree.right)
-            if not tree.left and not tree.right:
-                if sums[-1] == num:
-                    ret.append([p.val for p in path])
-            path.pop()
-            sums.pop()
-        dfs(tree)
+        path = [tree.elem]
+        def dfs(tree,path):
+            if tree.l_child:
+                dfs(tree.l_child,path+[tree.l_child.elem])
+            if tree.r_child:
+                dfs(tree.r_child,path+[tree.r_child.elem])
+            if not tree.l_child and not tree.r_child and sum(path) == num:
+                    ret.append(path)
+        dfs(tree,path)
         return ret
+
 
     def get_depth(self,root):
         """获取树的深度
@@ -183,18 +196,89 @@ class HandleTree():
             return 1
         return 1+max(self.get_depth(root.l_child),self.get_depth(root.r_child))
 
+    def is_search_tree(self,root):
+        """判断是否为二叉搜索树
+        思路：中序遍历情况下，值递增则为二叉树;用一中间值保存上一遍历结果，并与下轮结果比较"""
+        flag=True
+        deque=[]
+        ret=0
+        while deque or root:
+            if root:
+                deque.append(root)
+                root=root.l_child
+            else:
+                node=deque.pop()
+                if node.elem<ret:
+                    flag=False
+                    break
+                ret=node.elem
+                root=node.r_child
+        return flag
+
+    def is_complete_tree(self,root):
+        """判断是否为完全二叉树
+        左有右有 继续遍历
+        左有右无或者左无右无 余下必须全为叶节点 否则非完全二叉树
+        左无右有 非完全二叉树
+        """
+        flag=True
+        switch=True
+        deque=[root]
+        while deque:
+            node=deque.pop()
+            if node.l_child:
+                if not switch:
+                    break
+                deque.append(node.l_child)
+                # 左有右有 继续遍历
+                if node.r_child:
+                    if not switch:
+                        break
+                    deque.append(node.r_child)
+                # 左有右无,余下必须全为叶节点
+                else:
+                    switch=False
+            else:
+                #  左无右有 非完全二叉树
+                if node.r_child:
+                    flag=False
+                    break
+                # 左无右无, 余下必须全为叶节点
+                else:
+                    switch=False
+        return flag
+
+    def is_avl_tree(self,root):
+        """判断是否为平衡二叉树（左右子树深度差不超过1的二叉树）
+        思路：先判断当前节点是否平衡，再递归判断左右子节点是否平衡"""
+        if not root:
+            return True
+        l_deep=self.get_depth(root.l_child)
+        r_deep=self.get_depth(root.r_child)
+        if abs(l_deep-r_deep)<=1:
+            return self.is_avl_tree(root.l_child) and self.is_avl_tree(root.r_child)
+        else:
+            return False
+
+
+
+
 
 if __name__ == '__main__':
     tree=Tree()
     handle=HandleTree()
 
-    for elem in range(7):
+    for elem in [6,4,8,3,5,7,9]:
+    # for elem in range(1,8):
         tree.add(elem)
+    # print(handle.front_stack2(tree.root))
+    # print(handle.find_path(tree.root,5))
     print("获取树的深度 —————————————————————")
     print(handle.get_depth(tree.root))
+    print(handle.is_search_tree(tree.root))
 
-    print("非递归实现前序遍历（深度遍历）——————————————————————")
-    print(handle.front_stack(tree.root))
+    # print("非递归实现前序遍历（深度遍历）——————————————————————")
+    # print(handle.front_stack(tree.root))
 
     # print("递归实现前序遍历（深度遍历）——————————————————————")
     # print(handle.front_digui(tree.root))

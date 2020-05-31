@@ -1,16 +1,18 @@
-def max_heapify(heap,heapSize,root):
-    """最大堆调整"""
-    left=2*root+1
+def max_heapify(heap,heapSize,root_index):
+    """最大堆调整：子堆为最大堆情况下，堆顶更换后进行调整
+    heapSize:堆大小,从root_index开始从0计数
+    root:子堆顶索引编号"""
+    left=2*root_index+1
     right=left+1
-    larger=root
-    if left<heapSize and heap[larger]<heap[left]:
+    larger=root_index
+    if left < heapSize and heap[larger]<heap[left]:
         larger=left
-    if right < heapSize and heap[larger]<heap[right]:
+    if right<heapSize and heap[larger]<heap[right]:
         larger=right
-    if larger!=root:
-        # 表明需要交换子节点和父节点
-        heap[root],heap[larger]=heap[larger],heap[root]
+    if larger!=root_index:
+        heap[root_index],heap[larger]=heap[larger],heap[root_index]
         max_heapify(heap,heapSize,larger)
+
 
 def build_max_heap(heap):
     """建立最大堆"""
@@ -28,7 +30,20 @@ def heap_sort(heap):
         max_heapify(heap,i,0)
     return heap
 
+def get_min_k(heap,k):
+    """获取最小的k个数，维护k个元素的最大堆，那其他元素与堆顶比较，若小于堆顶
+    ，就替换，重新维护最大堆，最后不在堆里的n-k个元素都比堆里元素大，及堆为最小k"""
+    heap_k=heap[:k]
+    heap_other=heap[k:]
+    build_max_heap(heap_k)
+    for i in range(len(heap_other)):
+        if heap_other[i]<heap_k[0]:
+            heap_k[0]=heap_other[i]
+            max_heapify(heap_k,k,0)
+    print(heap_k)
+
+
 if __name__ == '__main__':
-    a=[30,50,57,77,62,78,94,80,84]
+    a=[5,4,7,8,1,3,9,6]
     heap_sort(a)
-    print(a)
+    get_min_k(a,5)
