@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/丑数.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/数学元素/丑数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/动态规划/减绳子.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/动态规划/减绳子.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/动态规划/股票走势.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/动态规划/股票走势.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/实现可增加数并返回中位数.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/数学元素/实现可增加数并返回中位数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/换瓶子.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/数学元素/换瓶子.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/旋转数组中位数.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/数学元素/旋转数组中位数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/最大字符串长度.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/字符串/最大字符串长度.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/正则重写.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/正则/正则重写.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/第一个只出现一次的字符串.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/字符串/第一个只出现一次的字符串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/自定义排序/按磁盘内存排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/自定义排序/按磁盘内存排序.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/arithmetic/自定义排序/最小数组值.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/algorithm/自定义排序/最小数组值.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/data_structure/heapq.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/data_structure/heapq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/sort/heap_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/sort/heap_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/sort/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/sort/merge_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/sort/quick_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/sort/quick_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/work.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn/algorithm/二分法/查找元素的第一个和最后一个位置.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/learn/algorithm/二分法/查找元素的第一个和最后一个位置.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="61" />
+    <option name="y" value="-28" />
+    <option name="width" value="1221" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="二分法" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/pycharm学习/Love story1.0" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="" />
+      <created>1592748813064</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592748813064</updated>
+      <workItem from="1592748844786" duration="3037000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3037000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/learn/algorithm/二分法/查找元素的第一个和最后一个位置.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
