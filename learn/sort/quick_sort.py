@@ -7,7 +7,7 @@ def quick_sort(arr, start, end):
         return
 
     while right > left:
-        while arr[left] <= key and right > left:
+        while arr[left] <= key and left < right:
             left += 1
         # left位置为目前值大于key的位置，将大于key的值放在right对应位置
         arr[right] = arr[left]
@@ -17,6 +17,7 @@ def quick_sort(arr, start, end):
         # right位置为目前值小于key的位置，把该值放到left对应位置
         arr[left] = arr[right]
 
+
     arr[left] = key
     quick_sort(arr, start, left - 1)
     quick_sort(arr, left + 1, end)
@@ -24,9 +25,9 @@ def quick_sort(arr, start, end):
 
 class Sort():
     def __init__(self):
-        self.top=None
+        self.top = None
 
-    def get_top_min(self,arr, start, end, top_k):
+    def get_top_min(self, arr, start, end, top_k):
         """求第k小数 ,分治法(减治法,典型二分查找),时间复杂度O(n) << n+n/2+n/4+n/8+...+n/n==2n
         最坏情况下O(n^2)"""
         key = arr[end]
@@ -58,9 +59,9 @@ class Sort():
 
 
 if __name__ == '__main__':
-    a = [9, 5, 3,8,4,7,6]
+    a = [9, 5, 3, 8, 5,4, 7,9,6]
     # print(a)
-    quick_sort(a, 0, 6)
+    quick_sort(a, 0, 8)
     print(a)
     # SORT = Sort()
     # SORT.get_top_min(a,0,6,1)
