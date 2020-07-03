@@ -7,15 +7,16 @@
     2.break 关键
 """
 import re
+
 while True:
     try:
-        datas=input()
-        datas_new=[i for i in re.compile(r'[^0-9]+').split(datas)]
-        max_length=max([len(i) for i in datas_new])
+        datas = input()
+        datas_new = [i for i in re.compile(r'[^0-9]+').split(datas)]
+        max_length = max([len(i) for i in datas_new])
         max_list = []
         for data in datas_new:
-            length=len(data)
-            if length==max_length:
+            length = len(data)
+            if length == max_length:
                 max_list.append(data)
         print(''.join(max_list) + ',' + str(max_length))
     except Exception as e:
