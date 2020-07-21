@@ -1,10 +1,10 @@
-"""简单工厂模式"""
+"""简单工厂模式:定义了一个创建对象的类,由这个类来封装实例化对象的行为;
+    用来生产同一等级结构中的固定产品(不支持拓展增加产品)"""
 from abc import ABC, abstractmethod
 
 
 class Payment(ABC):
     """规定了一个兼容接口"""
-
     @abstractmethod
     def pay(self):
         pass

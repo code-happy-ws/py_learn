@@ -32,8 +32,6 @@ class Solution:
         return '' if i == 0 else s[position[0]:position[1] + 1]
 
 
-def get_min_window(s, t):
-
 
 if __name__ == '__main__':
     s = "bbabcbaaac"
