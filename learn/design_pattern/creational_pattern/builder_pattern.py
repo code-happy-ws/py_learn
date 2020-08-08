@@ -9,6 +9,32 @@
 """
 from abc import ABC, abstractmethod
 
+"""产品角色"""
+
+
+class Actor:
+    def __init__(self):
+        self.type = None
+        self.sex = None
+        self.face = None
+        self.hair_style = None
+
+    def set_type(self, type):
+        self.type = type
+
+    def set_sex(self, sex):
+        self.sex = sex
+
+    def set_face(self, face):
+        self.face = face
+
+    def set_hair_style(self, hair_style):
+        self.hair_style = hair_style
+
+    def display(self):
+        print([self.type, self.face, self.sex, self.hair_style])
+
+
 """抽象建造者"""
 
 
@@ -73,37 +99,13 @@ class HeroActorBuilder(AbstractActorBuilder):
         self.actor.set_hair_style('帅气短发')
 
 
-"""产品角色"""
-
-
-class Actor:
-    def __init__(self):
-        self.type = None
-        self.sex = None
-        self.face = None
-        self.hair_style = None
-
-    def set_type(self, type):
-        self.type = type
-
-    def set_sex(self, sex):
-        self.sex = sex
-
-    def set_face(self, face):
-        self.face = face
-
-    def set_hair_style(self, hair_style):
-        self.hair_style = hair_style
-
-    def display(self):
-        print([self.type, self.face, self.sex, self.hair_style])
-
-
 """指挥者"""
 
 
 class ActorControl:
-    def construct(self, builder):
+
+    @staticmethod
+    def construct(builder):
         builder.build_type()
         builder.build_sex()
         builder.build_face()
@@ -113,5 +115,9 @@ class ActorControl:
 
 if __name__ == '__main__':
     control = ActorControl()
-    angle = control.construct(AngleActorBuilder())
-    angle.display()
+
+    angle_1 = control.construct(AngleActorBuilder())
+    angle_1.display()
+
+    angle_2 = control.construct(HeroActorBuilder())
+    angle_2.display()
