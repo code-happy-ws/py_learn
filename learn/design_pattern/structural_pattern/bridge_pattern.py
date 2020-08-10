@@ -24,16 +24,6 @@ class Image(ABC):
         pass
 
 
-class ImageImplement:
-    """实现类接口"""
-
-    def __init__(self):
-        pass
-
-    def show_image(self):
-        pass
-
-
 class JGPImage(Image):
     """扩充抽象类"""
 
@@ -49,6 +39,15 @@ class GIFImage(Image):
         self.os.show_image()
         print(f'{filename}显示格式为GIF')
 
+
+class ImageImplement:
+    """实现类接口"""
+
+    def __init__(self):
+        pass
+
+    def show_image(self):
+        pass
 
 class WindowsImageOS(ImageImplement):
     """具体类实现"""

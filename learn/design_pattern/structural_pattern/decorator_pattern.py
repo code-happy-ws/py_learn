@@ -1,4 +1,4 @@
-"""装饰模式：动态地给一个对象增加一些额外的职责，就增加对象功能来说，装饰模式比生成子类实现更为灵活。
+""" 装饰模式：动态地给一个对象增加一些额外的职责，就增加对象功能来说，装饰模式比生成子类实现更为灵活。
     装饰模式是一种对象结构型模式。
     装饰模式分类：
         透明模式（标准装饰模式）：具体装饰器类中只有抽象构件类声明的方法；
@@ -31,7 +31,8 @@ class AbstractComponent(ABC):
 
 """具体构件类：它是抽象构件类的子类，用于定义具体的构件对象，实现了在抽象构件中声明的方法，装饰器可以给它增加额外的职责（方法）"""
 
-class Windows(AbstractComponent):
+
+class Window(AbstractComponent):
     def display(self):
         print('显示窗体')
 
@@ -72,8 +73,6 @@ class ScrollBarDecorator(AbstractComponentDecorator):
 
 
 class BlackBorderDecorator(AbstractComponentDecorator):
-    def __init__(self, component):
-        super().__init__(component)
 
     def display(self):
         self.set_black_bar()
@@ -87,10 +86,11 @@ class BlackBorderDecorator(AbstractComponentDecorator):
 
 
 if __name__ == '__main__':
-    component = Windows()
+    component1 = Window()
     # component.display()
-    component_with_black_board = BlackBorderDecorator(component)
+    component_with_black_board = BlackBorderDecorator(component1)
     component_with_black_board_and_scroll_bar = ScrollBarDecorator(component_with_black_board)
     # component_with_black_board.display()
     component_with_black_board_and_scroll_bar.display()
-    component_with_black_board.other_func()
+
+    # component_with_black_board.other_func()
