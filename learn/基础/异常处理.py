@@ -1,9 +1,3 @@
-# import cchardet as chardet
-import os
-
-import chardet
-import sys
-
 def divide(x,y):
     try:
         re = x//y

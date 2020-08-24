@@ -22,6 +22,8 @@ class Singleton:
 
 
 obj1 = Singleton('a')
+
 obj2 = Singleton('b')
 print(id(obj1), id(obj2))
-print(obj2.show())
+obj1.show()
+obj2.show()
