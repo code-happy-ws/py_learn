@@ -1,14 +1,18 @@
-# import cchardet as chardet
-import os
+import time
 
-import chardet
-import sys
+def func1():
+    while True:
+        print('func1')
+        yield
 
-def divide(x,y):
-    try:
-        re = x//y
-    except ZeroDivisionError as error:
-        raise ValueError('错误') from error
-    else:
-        return re
-print(divide(8,0))
+def func2():
+    g = func1()
+    for i in range(10):
+        next(g)
+        time.sleep(3)
+        print('func2')
+
+start = time.time()
+func2()
+stop = time.time()
+print(stop - start)

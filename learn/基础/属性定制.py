@@ -94,14 +94,14 @@ class RedBook(Book):
         pass
 if __name__ == '__main__':
     P = Person(1000)  # 调用setter
-    print(P.name)  # 调用getter
+    # print(P.name)  # 调用getter
 
-    print("描述符实现属性注解-----------------")
-    food=Customer()
-    food.first_name='zzw'
-    print(Customer.first_name,food.__dict__)
-
-    print("元类+描述符实现属性注解-----------------")
-    book=RedBook()
-    book.last_name='hws'
-    print(book.last_name,book.__dict__)
+    # print("描述符实现属性注解-----------------")
+    # food=Customer()
+    # food.first_name='zzw'
+    # print(Customer.first_name,food.__dict__)
+    #
+    # print("元类+描述符实现属性注解-----------------")
+    # book=RedBook()
+    # book.last_name='hws'
+    # print(book.last_name,book.__dict__)

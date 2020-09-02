@@ -31,6 +31,7 @@ def get_all_array(seq):
             # 用交换来选定first位置上所有可能的元素，
             # 当first=0时有n个元素可以放到first位置
             seq[first], seq[i] = seq[i], seq[first]
+            
             # first位置放好元素之后，用递归去放first+1位置的元素，它有n-1种取值
             print(seq)
             dfs(first + 1)
