@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/learn/design_pattern/creational_pattern/simple_factory_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/design_pattern/creational_pattern/simple_factory_pattern.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/sort/bucket_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/sort/bucket_sort.py" afterDir="false" />
-    </list>
+    <list default="true" id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,33 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/tet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/state_pattern.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="93" column="45" lean-forward="true" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/observer_pattern.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1426">
-              <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,11 +80,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
               <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/mediator_pattern.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -156,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learn/algorithm/二分法/查找元素的第一个和最后一个位置.py" />
-        <option value="$PROJECT_DIR$/learn/algorithm/数学元素/求两排序数组中位数.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/数学元素/质数和.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/硬币.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/cuo.py" />
@@ -206,6 +200,9 @@
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/stragety_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py" />
+        <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/mediator_pattern.py" />
+        <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py" />
+        <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py" />
       </list>
     </option>
   </component>
@@ -572,15 +569,16 @@
       <workItem from="1597549322882" duration="9807000" />
       <workItem from="1597676449220" duration="8754000" />
       <workItem from="1598194086600" duration="9022000" />
-      <workItem from="1598489059375" duration="22077000" />
+      <workItem from="1598489059375" duration="22379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203603000" />
+    <option name="totallyTimeSpent" value="203905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -643,27 +641,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/实现可增加数并返回中位数.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/换瓶子.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/求两排序数组中位数.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/缺失的第一个正数.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -976,6 +953,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/mediator_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
