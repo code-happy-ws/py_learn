@@ -1,7 +1,7 @@
 from sort.insert_sort import insert_sort
 
 def bucket_sort(a):
-    """桶排序，将数据分至若干个桶，适用于数据均匀分布于0-1之间"""
+    """桶排序，将数据分至若干个桶，适用于数据均匀分布"""
     s=[[] for i in range(len(a))]
     b=[]
     for i in a:

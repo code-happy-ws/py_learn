@@ -15,32 +15,41 @@
 """子系统"""
 class SubSystemA:
     def method_a(self):
-        print('放入蔬菜')
-
+        print('生火')
 
 class SubSystemB:
     def method_b(self):
-        print('起锅')
-
+        print('放肉')
 
 class SubSystemC:
     def method_c(self):
-        print('生火')
+        print('加盐')
+
+class SubSystemD:
+    def method_d(self):
+        print('烤箱')
 
 
 """外观类"""
-class Facade:
+class Cook:
     def __init__(self):
         self.system_a = SubSystemA()
         self.system_b = SubSystemB()
         self.system_c = SubSystemC()
+        self.system_d = SubSystemD()
 
-    def method(self):
-        self.system_c.method_c()
+    def cook_a(self):
         self.system_a.method_a()
         self.system_b.method_b()
+        self.system_c.method_c()
+        print('香喷喷的的炒肉')
+
+    def cook_b(self):
+        self.system_d.method_d()
+        self.system_b.method_b()
+        print('香喷喷的烤肉')
 
 
 if __name__ == '__main__':
-    facade = Facade()
-    facade.method()
+    facade = Cook()
+    facade.cook_a()

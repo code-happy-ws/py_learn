@@ -18,14 +18,14 @@ class Payment(ABC):
     """规定了一个兼容接口"""
 
     @abstractmethod
-    def pay(self):
+    def pay(self, money):
         pass
 
 
 """具体产品"""
 
 
-class WeChatPay(object):
+class WeChatPay(Payment):
     """微信支付"""
 
     def pay(self, money):
@@ -35,7 +35,7 @@ class WeChatPay(object):
 """具体产品"""
 
 
-class ApplePay(object):
+class ApplePay(Payment):
     """苹果支付"""
 
     def pay(self, money):
@@ -53,8 +53,17 @@ class PayFactory:
         elif method == 'wechat':
             return ApplePay()
 
+class Pay:
+    """对比策略模式：强调对象的行为替换，简单工厂强调对象的生产"""
+    def __init__(self, pay_object):
+        self.pay_object = pay_object
+
+    def pay(self, money):
+        self.pay_object.pay(money)
 
 if __name__ == '__main__':
     pay_factory = PayFactory()
     PAY = pay_factory.create_pay(method='wechat')
     PAY.pay('100')
+
+    Pay(WeChatPay()).pay(10)
