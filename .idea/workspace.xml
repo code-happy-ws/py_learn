@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="" />
+    <list default="true" id="9c1914d8-1715-4ef1-a7ec-ffe7164047d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/tet.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/tet.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,11 @@
     <SUITE FILE_PATH="coverage/py_learn$quick_sort.coverage" NAME="quick_sort Coverage Results" MODIFIED="1593270207771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/sort" />
     <SUITE FILE_PATH="coverage/py_learn$command_pattern.coverage" NAME="command_pattern Coverage Results" MODIFIED="1596330883663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern" />
     <SUITE FILE_PATH="coverage/py_learn$facade_pattern.coverage" NAME="facade_pattern Coverage Results" MODIFIED="1599148539177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/structural_pattern" />
+    <SUITE FILE_PATH="coverage/py_learn$interpreter_pattern.coverage" NAME="interpreter_pattern Coverage Results" MODIFIED="1599355807284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern" />
     <SUITE FILE_PATH="coverage/py_learn$singleton_pattern.coverage" NAME="singleton_pattern Coverage Results" MODIFIED="1598277669428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/creational_pattern" />
     <SUITE FILE_PATH="coverage/py_learn$simple_factory_pattern.coverage" NAME="simple_factory_pattern Coverage Results" MODIFIED="1599179279077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/creational_pattern" />
-    <SUITE FILE_PATH="coverage/py_learn$tet.coverage" NAME="tet Coverage Results" MODIFIED="1599058624552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn" />
+    <SUITE FILE_PATH="coverage/py_learn$tet.coverage" NAME="tet Coverage Results" MODIFIED="1599396001551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn" />
+    <SUITE FILE_PATH="coverage/py_learn$N_queen.coverage" NAME="N_queen Coverage Results" MODIFIED="1599294552062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/algorithm/回溯" />
     <SUITE FILE_PATH="coverage/py_learn$flyweight_pattern.coverage" NAME="flyweight_pattern Coverage Results" MODIFIED="1596960313657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/design_pattern/structural_pattern" />
     <SUITE FILE_PATH="coverage/py_learn$.coverage" NAME="全排列 Coverage Results" MODIFIED="1598771360373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/algorithm/回溯" />
     <SUITE FILE_PATH="coverage/py_learn$gevent_learn.coverage" NAME="gevent_learn Coverage Results" MODIFIED="1599006190838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn/线程、进程、协程/协程" />
@@ -33,85 +40,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="168">
+              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/bridge_pattern.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/tet.spec">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/decorator_pattern.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn/tet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="-844">
+              <caret selection-start-column="2" selection-end-line="18" selection-end-column="17" />
               <folding>
-                <element signature="e#0#693#1" />
+                <element signature="e#382#394#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/stragety_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/observer_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="368">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/全排列.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+            <state relative-caret-position="-322">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/正则表达式匹配.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="483">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/mediator_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/N_queen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="598">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py">
+        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/chain_of_responsibility_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="-785">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -119,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn/design_pattern/creational_pattern/simple_factory_pattern.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="1288">
               <caret line="56" selection-start-line="56" selection-end-line="56" selection-end-column="38" />
             </state>
           </provider>
@@ -152,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learn/algorithm/数学元素/质数和.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/硬币.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/cuo.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/动态规划小结.py" />
@@ -191,25 +184,26 @@
         <option value="$PROJECT_DIR$/learn/package/os_path.py" />
         <option value="$PROJECT_DIR$/learn/algorithm/动态规划/最大序列和.py" />
         <option value="$PROJECT_DIR$/learn/csvData.csv" />
-        <option value="$PROJECT_DIR$/learn/tet.py" />
         <option value="$PROJECT_DIR$/learn/线程、进程、协程/协程/gevent.py" />
         <option value="$PROJECT_DIR$/learn/线程、进程、协程/协程/gevent_learn.py" />
         <option value="$PROJECT_DIR$/learn/sort/bucket_sort.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/creational_pattern/simple_factory_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/stragety_pattern.py" />
-        <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/mediator_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py" />
+        <option value="$PROJECT_DIR$/learn/algorithm/回溯/N_queen.py" />
+        <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py" />
         <option value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py" />
+        <option value="$PROJECT_DIR$/learn/tet.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="197" />
-    <option name="y" value="107" />
-    <option name="width" value="697" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="714" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -246,20 +240,6 @@
               <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
               <item name="behavioral_pattern" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="creational_pattern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="py_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="structural_pattern" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -293,8 +273,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.simple_factory_pattern">
-    <configuration name="异常处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.tet">
+    <configuration name="N_queen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -302,12 +282,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn/基础" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn/algorithm/回溯" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn/基础/异常处理.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn/algorithm/回溯/N_queen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -448,7 +428,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gevent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="interpreter_pattern" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -456,34 +436,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn/线程、进程、协程/协程" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\pycharm_len\py_learn\learn\线程、进程、协程\协程\gevent_learn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gevent_learn" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py_learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn/线程、进程、协程/协程" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn/线程、进程、协程/协程/gevent_learn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -538,11 +496,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tet" />
+        <item itemvalue="Python.interpreter_pattern" />
+        <item itemvalue="Python.N_queen" />
         <item itemvalue="Python.simple_factory_pattern" />
         <item itemvalue="Python.facade_pattern" />
-        <item itemvalue="Python.tet" />
-        <item itemvalue="Python.gevent_learn" />
-        <item itemvalue="Python.gevent" />
       </list>
     </recent_temporary>
   </component>
@@ -569,23 +527,24 @@
       <workItem from="1597549322882" duration="9807000" />
       <workItem from="1597676449220" duration="8754000" />
       <workItem from="1598194086600" duration="9022000" />
-      <workItem from="1598489059375" duration="22379000" />
+      <workItem from="1598489059375" duration="22484000" />
+      <workItem from="1599290701094" duration="13111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203905000" />
+    <option name="totallyTimeSpent" value="217121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13615733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30491802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3409836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25737706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -641,16 +600,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/缺失的第一个正数.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/字符串/以非连续位置放置气球.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/algorithm/字符串/最少去除获得字串.py" />
     <entry file="file://$PROJECT_DIR$/learn/algorithm/字符串/最大字符串长度.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -728,22 +677,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/正则表达式匹配.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/algorithm/动态规划/硬币.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/chain_of_responsibility_pattern.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/creational_pattern/singleton_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -795,13 +730,6 @@
     <entry file="file://$PROJECT_DIR$/learn/线程、进程、协程/线程/多线程.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-673" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/全排列.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/algorithm/数学元素/最长连续序列.py">
@@ -883,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/tet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/state_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -897,17 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/observer_pattern.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/facade_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="506">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -921,38 +835,59 @@
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/structural_pattern/decorator_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#693#1" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/stragety_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/creational_pattern/simple_factory_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="1288">
           <caret line="56" selection-start-line="56" selection-end-line="56" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/stragety_pattern.py">
+    <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/正则表达式匹配.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="483">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py">
+    <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/全排列.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        <state relative-caret-position="-322">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py">
+    <entry file="file://$PROJECT_DIR$/learn/algorithm/回溯/N_queen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/chain_of_responsibility_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-785">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -963,17 +898,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/memento_pattern.py">
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/visitor_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/templete_method_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/observer_pattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/design_pattern/behavioral_pattern/interpreter_pattern.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="168">
+          <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tet.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn/tet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-844">
+          <caret selection-start-column="2" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#382#394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
