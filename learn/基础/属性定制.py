@@ -15,6 +15,7 @@ class Person:
 
     @name.setter
     def name(self, name):
+        """@name.setter使能该属性可写，否则只能可读"""
         print('setter')
         if name < 10:
             self._name = name * 10

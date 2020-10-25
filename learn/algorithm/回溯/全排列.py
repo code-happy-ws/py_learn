@@ -14,6 +14,7 @@
 
 
 def get_all_array(seq):
+    """时间复杂度：O（n*n!）(dfs调用次数时间复杂度为O(n!),每个dfs内O时间复杂度(n),相乘即可)"""
     if not seq:
         return []
     length = len(seq)
@@ -25,13 +26,13 @@ def get_all_array(seq):
             return
         for i in range(first, length):
             print('------')
-            print(first,i)
+            print(first, i)
             # print(seq[first], seq[i])
             # 用first选定nums中每个位置，取值是[0, n-1]
             # 用交换来选定first位置上所有可能的元素，
             # 当first=0时有n个元素可以放到first位置
             seq[first], seq[i] = seq[i], seq[first]
-            
+
             # first位置放好元素之后，用递归去放first+1位置的元素，它有n-1种取值
             print(seq)
             dfs(first + 1)
@@ -44,5 +45,5 @@ def get_all_array(seq):
 
 
 if __name__ == '__main__':
-    seq = [0,1,2]
+    seq = [0, 1, 2]
     print(get_all_array(seq))

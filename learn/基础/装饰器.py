@@ -6,7 +6,7 @@ print('基础装饰器---------------------------------------------------------'
 
 
 def clear(func, name='zzw'):
-    @wraps
+    @wraps(func)
     def wrapper(*args, **kwargs):
         print(name)
         print('start')
@@ -20,7 +20,7 @@ def a(m):  # 参数将传递至wrapper中
     print('aa' + m)
 
 
-a('bb')
+# a('bb')
 
 print('装饰器类---------------------------------------------------------')
 
@@ -54,7 +54,7 @@ def myfunc1():
     pass
 
 
-print('派发装饰器---------------------------------------------------------')
+print('派发装饰器--函数使用---------------------------------------------------------')
 
 
 @singledispatch
@@ -91,3 +91,33 @@ show_type('a')
 show_type(1)
 show_type((1,))
 show_type([1, 2])
+
+print('派发装饰器--类使用---------------------------------------------------------')
+
+class A:
+    pass
+
+class B:
+    pass
+
+class C:
+    @singledispatch
+    def visit(t):
+        """其他未知类型处理"""
+        print('财务部处理员工类型异常')
+
+    @visit.register
+    def _(t: int):
+        """等同于
+            @visit.register(int)
+            def _(t):
+                print(f'财务部处理全职员工')
+        """
+        print(f'财务部处理全职员工')
+
+    @visit.register
+    def _(t: str):
+        print(f'财务部处理兼职员工')
+
+# 不能实例化调用，只能通过类调用，singledispatch源码分析只能取第一个参数类型进行派分
+C.visit(1)

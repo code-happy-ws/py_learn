@@ -24,6 +24,13 @@ def skip(nums):
             break
     return False
 
+def skip2(nums):
+    max_step = 0
+    for index, step in enumerate(nums):
+        if index > max_step:
+            return False
+        max_step = max(max_step, index + step)
+    return True
 
 if __name__ == '__main__':
     position = [3, 2, 1, 0, 4]
