@@ -1,4 +1,2 @@
-q=0
-def a():
-    q = max(q, 1)
-print(q)
+a={1:2,2:3}
+print(list(a.keys())[0])
