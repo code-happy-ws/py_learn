@@ -1,55 +1,119 @@
 """
-A
-|-B
-|-|-C
-|-|-D
-|-|-|-E
-|-|-F
-|-G
-|-|-H
+18：01--19：08
+i don't know what this is
+I don't know what this is
+我虽不知其为何物：
+
+21：09
+But I like it like that
+但我不自觉爱上了它
+
+25：01
+I wasn't one to wish
+我是个不常祈愿的人
+--31：23
+But I'm throwing all the pennies I have
+但我正倾我所有诚心祈祷
 
 
-{A:[B,G],B:[C,D,F],D:[E],g:[H]}
+Cause you and me, got something in between us
+只因我与你之间似乎出现了隔阂
+Honestly, It's all been kinda easy
+其实解决这问题并不难
+I don't know what to think
+只不过我不知该如何思考
+and I got no time for thinking like that
+何况我根本来不及停下思考
 
-[(0,'A'),(1,'B'),(2,'C'),(2,'D'),(3,'E'),(2,'F'),(1,'G'),(2,'H')]
-[C,E,D,F,B,H,G,A]
+
+Oh, and this is all happening so fast
+噢，这一切发生在顷刻之间
+yeah, baby, I'm falling in
+亲爱的，我似乎掉进了爱的陷阱
+I don't think that we (i don't think that we)
+且我并不认为
+can hold back (hold back)
+我们能阻止这一切
+but maybe I like it like that
+但或许我正喜欢此般感觉
+I like it like that
+我正想要如此感受
+but maybe i like it like that
+可能我本就喜欢如此
+i like it like that
+我无法自拔
+but maybe i like it like that
+或许我正喜欢此般感觉
+
+卡点：02：21：22-- 22：18--23：15
+
+噢，我知道你也喜欢
+baby, you like it
+你感同身受，对吗？
+(but maybe i like it like that)
+(可能我本就喜欢如此)
+ooh, baby, you like it
+你一定也喜欢这样吧
+baby, you like it
+你与我感同身受
+
+
+something's gotta give
+爱需要付出
+so I'll give in to you (give in to you)
+我会为你献出一切
+I don't wanna resist
+可我已不想抵抗
+Cause you know that we got nothing to lose
+只因我知道我们已没有退路
+
+
+yeah, this is good, and we don't gotta slow down
+就让它继续下去，我们都不想放慢脚步
+think we should, try going with the flow now
+就让它如此发展，我们本应要随波逐流
+we're already in
+我们早已进入了这无法言喻的感觉
+yeah, I think you're feeling it too (oh, you're feeling it too)
+是的，我想你一定也发觉了
+
+
+oh, and this is all happening so fast (so fast)
+噢，这一切发生在顷刻之间
+yeah, baby, i'm falling in
+亲爱的，我似乎掉进了爱的陷阱
+i don't think that we can hold back
+我认为我们无法挽回
+but maybe i like it like that
+但或许我正喜欢此般感觉
+ooh, i like it like that
+我正想要如此感受
+but maybe i like it like that
+可能我本就喜欢如此
+i like it like that
+我无法自拔
+but maybe, i like it like that
+或许我正喜欢此般感觉
+
+
+ooh, baby, you like it
+噢，我知道你也喜欢
+baby, you like it
+你感同身受，对吗？
+(ooh, baby, you like it)
+(你一定也喜欢这样吧)
+ooh, baby, you like it
+噢，我知道你也喜欢
+baby, you like it
+你与我感同身受
+
+
+oh, this is all happening so fast
+噢，这一切发生在顷刻之间
+yeah, baby, i'm falling in
+亲爱的，我似乎掉进了爱的陷阱
+i don't think that we can hold back
+我并不认为我们能阻止这一切
+but maybe i like it like that
+亦或许我正沉迷此般感觉
 """
-from collections import OrderedDict
-
-level_flag = '|-'
-
-
-def get(tree):
-    """
-    [(0,'A'),(1,'B'),(2,'C'),(2,'D'),(3,'E'),(2,'F'),(1,'G'),(2,'H')]
-    {A:[B,G],B:[C,D,F],D:[E],g:[H]}
-    """
-    dir_level_list = [0] * len(tree)
-    dir_dict = OrderedDict()
-    dir_last = tree[0][0]
-    dir_dict[tree[0][1]] = []
-    for pos in range(1, len(tree)):
-        level = tree[pos][0]
-        dir_name = tree[pos][1]
-        if level == tree[pos - 1][0] + 1:
-            if dir_dict.get(tree[pos - 1][1]):
-                dir_dict[tree[pos - 1][1]].append(dir_name)
-            else:
-                dir_dict[tree[pos - 1][1]] = [dir_name]
-            dir_last = tree[pos - 1][1]
-            dir_level_list[level - 1] = tree[pos - 1][1]
-        if level == tree[pos - 1][0]:
-            if dir_dict.get(dir_last):
-                dir_dict[dir_last].append(dir_name)
-            else:
-                dir_dict[dir_last] = [dir_name]
-        if level < tree[pos - 1][0]:
-            father_dir = dir_level_list[level - 1]
-            dir_dict[father_dir].append(dir_name)
-    return dir_dict
-
-
-if __name__ == '__main__':
-    a = [(0, 'A'), (1, 'B'), (2, 'C'), (2, 'D'), (3, 'E'), (2, 'F'), (1, 'G'), (2, 'H')]
-    b = get(a)
-    print(b)

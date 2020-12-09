@@ -94,7 +94,6 @@ class DirManage():
         return dir_dict
 
 
-
 if __name__ == '__main__':
     # num = int(input().strip())
     # dir_tree_lines = [input().strip() for _ in range(num)]

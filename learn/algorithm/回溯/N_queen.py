@@ -38,16 +38,16 @@ def solve_queen(n):
             for i in range(n):
                 # i表示当前要放的位置column值，需先判断当前所在列、左斜线、右斜线是否已有皇后
                 # （无需考虑同一行，因为每次回溯有row+1，不可能同行，queens[row]中的row表示当前行）
-                if i in columns or row - i in diagonal1 or row + i in diagonal2:
+                if i in columns or row - i in diagonal_left or row + i in diagonal_right:
                     continue
                 queens[row] = i
                 columns.add(i)
-                diagonal1.add(row - i)
-                diagonal2.add(row + i)
+                diagonal_left.add(row - i)
+                diagonal_right.add(row + i)
                 backtrack(row + 1)
                 columns.remove(i)
-                diagonal1.remove(row - i)
-                diagonal2.remove(row + i)
+                diagonal_left.remove(row - i)
+                diagonal_right.remove(row + i)
 
     solutions = list()
 
@@ -58,10 +58,10 @@ def solve_queen(n):
     columns = set()
 
     # 保存已占用的左向下斜线特征值，表示该斜线已有皇后 （按照第四象限坐标轴，column-row值相等表示在同一斜线上）
-    diagonal1 = set()
+    diagonal_left = set()
 
     # 保存已占用的右斜线特征值，表示该斜线已有皇后 （按照第四象限坐标轴，column+row值相等表示在同一斜线上）
-    diagonal2 = set()
+    diagonal_right = set()
 
     # 一行的内容（.表示空位，Q表示皇后）
     row = ['.'] * n
