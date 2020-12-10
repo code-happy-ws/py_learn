@@ -117,3 +117,5 @@ i don't think that we can hold back
 but maybe i like it like that
 亦或许我正沉迷此般感觉
 """
+stack = []
+print(stack[-1])
