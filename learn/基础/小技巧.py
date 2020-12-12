@@ -54,3 +54,11 @@ bbbb=sorted(bb.items(),key=lambda bb:bb[1],reverse=False)
 print(bbbb)
 # bbb={k:v for k,v in bb.items()  }
 
+
+# 切片复制并不真正等同于深拷贝，如果列表里有可变对象，会同变
+a = [[1,2],[3,4]]
+b= a[:]
+b[1].append(9)
+print(a) # [[1, 2], [3, 4, 9]]
+
+
