@@ -12,7 +12,7 @@ class Chessman:
         self.y = y
         self.label = label
 
-    def set_lable(self, label):
+    def set_label(self, label):
         self.label = label
 
     def set_x(self, x):
@@ -21,7 +21,7 @@ class Chessman:
     def set_y(self, y):
         self.y = y
 
-    def get_lable(self):
+    def get_label(self):
         return self.label
 
     def get_x(self):
@@ -38,6 +38,10 @@ class Chessman:
         self.x = memento.get_x()
         self.y = memento.get_y()
 
+    def display(self):
+        print(f'棋子{self.label}当前位置为({self.x},{self.y})')
+
+
 
 """备忘录:存储原发器的内部状态，根据原发器来决定保存哪些内部状态。备忘录的设计一般可以参考原发器的设计，根据实际需要确定备忘录类中的属性。
 需要注意的是，除了原发器本身与负责人类之外，备忘录对象不能直接供其他类使用"""
@@ -49,7 +53,7 @@ class ChessmanMemento:
         self.y = y
         self.label = label
 
-    def set_lable(self, label):
+    def set_label(self, label):
         self.label = label
 
     def set_x(self, x):
@@ -58,7 +62,7 @@ class ChessmanMemento:
     def set_y(self, y):
         self.y = y
 
-    def get_lable(self):
+    def get_label(self):
         return self.label
 
     def get_x(self):
@@ -74,7 +78,7 @@ class ChessmanMemento:
 
 class MementiCaretaker:
     def get_memento(self):
-        return ChessmanMemento
+        return self.memento
 
     def set_memento(self, memento):
         self.memento = memento
@@ -83,5 +87,17 @@ if __name__ == '__main__':
     MC= MementiCaretaker()
     chess = Chessman('马',4,3)
     MC.set_memento(chess.save())
+    chess.display()
+
     chess.set_y(10)
-    
+    chess.display()
+    MC.set_memento(chess.save())
+
+    chess.set_x(100)
+    chess.display()
+    print('悔棋')
+    chess.restore(MC.get_memento())
+    chess.display()
+
+
+
